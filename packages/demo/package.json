@@ -1,0 +1,44 @@
+{
+  "name": "demo",
+  "version": "0.0.0",
+  "description": "Demo of storybook plugins",
+  "keywords": [
+    "storybookjs",
+    "reactjs",
+    "docs"
+  ],
+  "author": "Mitchell Lee <mitchlee@amazon.com> (BUI)",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/demo.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "watch": "start-storybook -p 6060",
+    "build": "build-storybook"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-docs": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/react": "^5.3.13",
+    "babel-loader": "^8.0.6",
+    "react": "^16.12.0",
+    "react-is": "^16.12.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[tj]sx?$": "babel-jest",
+      "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
+    }
+  }
+}
